@@ -22,3 +22,34 @@
 #search-query {
 	font-weight: bold;
 }
+
+.header--block--result {
+	width: 100%;
+	background: #fff;
+	z-index: 9;
+	position: absolute;
+	left: 0;
+	border-radius: 4px
+}
+
+.header--block--result ul {
+	list-style: none;
+	margin: 0px;
+	padding: 0;
+}
+
+.header--block--result ul li {
+	border-bottom: 1px solid #ddd;
+	border-left: 1px solid #ddd;
+	border-right: 1px solid #ddd;
+	padding: 10px;
+	box-sizing: border-box
+}
+
+.header--block--result ul li:first-child {
+	border-top: 1px solid #ddd
+}
+
+.header--block--result ul li a:hover {
+	color: #0081ff
+}

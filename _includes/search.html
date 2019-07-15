@@ -1,5 +1,11 @@
 <form action="{{ site.baseurl }}/search/" method="get">
-	<input type="search" name="q" {% if include.add_id %}id="search-input"{% endif %} placeholder="What would you like to know?" autofocus>
+	<input type="search" name="q" id="search-input" placeholder="Mit szeretnél megtudni?" autofocus>
 	{% include search-icon.html %}
-	<input type="submit" value="Search" style="display: none;">
+	<input type="submit" value="Keresés" style="display: none;">
+	<div class="header--block--result">
+		<ul id="results-container"></ul>
+	</div>
 </form>
+
+
+<script src="https://cdn.rawgit.com/christian-fei/Simple-Jekyll-Search/master/dest/simple-jekyll-search.min.js"></script>
